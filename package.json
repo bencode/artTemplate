@@ -1,5 +1,5 @@
 {
-  "name": "art-template",
+  "name": "plover-art-template",
   "description": "JavaScript Template Engine",
   "homepage": "http://aui.github.com/artTemplate/",
   "keywords": [
@@ -7,6 +7,9 @@
     "functional",
     "template"
   ],
+  "scripts": {
+    "test": "node ./node_modules/.bin/_mocha --require 'should' --reporter spec --recursive --bail --check-leaks test/spec.js"
+  },
   "author": "tangbin <sugarpie.tang@gmail.com>",
   "repository": {
     "type": "git",
@@ -15,6 +18,8 @@
   "main": "./node/template.js",
   "version": "3.0.3",
   "devDependencies": {
+    "mocha": "^2.2.1",
+    "should": "^5.2.0",
     "express": "~4.4.3",
     "grunt-cli": "*",
     "grunt": "*",
